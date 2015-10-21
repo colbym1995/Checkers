@@ -29,7 +29,7 @@
 
         if(isBlack == true)
         {
-            paint->setBrush(Qt::white);
+            paint->setBrush(QColor(255, 137, 0, 255));
             paint->drawEllipse(((80*(x))+2),((80*(y))+1),74,74);
             paint->setBrush(Qt::black);
             paint->drawEllipse(((80*(x))+4),((80*(y))+3),70,70);
@@ -38,7 +38,7 @@
         {
             paint->setBrush(Qt::black);
             paint->drawEllipse(((80*(x))+2),((80*(y))+1),74,74);
-            paint->setBrush(Qt::white);
+            paint->setBrush(QColor(255, 137, 0, 255));
             paint->drawEllipse(((80*(x))+4),((80*(y))+3),70,70);
         }
 

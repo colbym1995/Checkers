@@ -15,10 +15,17 @@ public:
     int whiteCount;
     bool newGame;
 
+    unsigned startx;
+    unsigned starty;
+    unsigned endx;
+    unsigned endy;
 
     Checkers(QWidget *parent = 0);
     ~Checkers();
     void paintEvent(QPaintEvent* e);
+    void mousePressEvent(QMouseEvent* event);
+    void mouseReleaseEvent(QMouseEvent* event);
+
 };
 
 #endif // CHECKERS_H
