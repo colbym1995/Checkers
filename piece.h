@@ -22,7 +22,7 @@ public:
   Piece(bool blk);
   ~Piece();
   void draw(QPainter* paint, int x, int y);
-  void SETisBlack(bool input);
+  void SetWhite();
   void SETisKing();
   bool GETisBlack();
   bool GETisKing();

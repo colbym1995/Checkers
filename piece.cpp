@@ -15,10 +15,7 @@
 
     Piece::Piece(bool blk)
     {
-        if(blk == false)
-            isBlack = false;
-        else
-            isBlack = true;
+        isBlack = blk;
         isKing = false;
     }
 
@@ -48,9 +45,9 @@
 
     }
 
-    void Piece::SETisBlack(bool input)
+    void Piece::SetWhite()
     {
-        isBlack = input;
+        isBlack = false;
     }
 
     void Piece::SETisKing()

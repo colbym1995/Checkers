@@ -8,30 +8,30 @@
 
 bool newGame = true;
 Piece* pieces[8][8];
-Piece b1 = new Piece(true);
-Piece b2 = new Piece(true);
-Piece b3 = new Piece(true);
-Piece b4 = new Piece(true);
-Piece b5 = new Piece(true);
-Piece b6 = new Piece(true);
-Piece b7 = new Piece(true);
-Piece b8 = new Piece(true);
-Piece b9 = new Piece(true);
-Piece b10= new Piece(true);
-Piece b11= new Piece(true);
-Piece b12= new Piece(true);
-Piece w1 = new Piece(false);
-Piece w2 = new Piece(false);
-Piece w3 = new Piece(false);
-Piece w4 = new Piece(false);
-Piece w5 = new Piece(false);
-Piece w6 = new Piece(false);
-Piece w7 = new Piece(false);
-Piece w8 = new Piece(false);
-Piece w9 = new Piece(false);
-Piece w10 = new Piece(false);
-Piece w11 = new Piece(false);
-Piece w12 = new Piece(false);
+Piece b1 = new Piece();
+Piece b2 = new Piece();
+Piece b3 = new Piece();
+Piece b4 = new Piece();
+Piece b5 = new Piece();
+Piece b6 = new Piece();
+Piece b7 = new Piece();
+Piece b8 = new Piece();
+Piece b9 = new Piece();
+Piece b10= new Piece();
+Piece b11= new Piece();
+Piece b12= new Piece();
+Piece w1 = new Piece();
+Piece w2 = new Piece();
+Piece w3 = new Piece();
+Piece w4 = new Piece();
+Piece w5 = new Piece();
+Piece w6 = new Piece();
+Piece w7 = new Piece();
+Piece w8 = new Piece();
+Piece w9 = new Piece();
+Piece w10 = new Piece();
+Piece w11 = new Piece();
+Piece w12 = new Piece();
 
 Checkers::Checkers(QWidget *parent)
     : QMainWindow(parent)
@@ -73,6 +73,18 @@ void Checkers::paintEvent(QPaintEvent* e)
     }
         if(newGame==true)
         {
+            w1.SetWhite();
+            w2.SetWhite();
+            w3.SetWhite();
+            w4.SetWhite();
+            w5.SetWhite();
+            w6.SetWhite();
+            w7.SetWhite();
+            w8.SetWhite();
+            w9.SetWhite();
+            w10.SetWhite();
+            w11.SetWhite();
+            w12.SetWhite();
 
             pieces[0][0] = &b1;
             pieces[0][2] = &b2;
