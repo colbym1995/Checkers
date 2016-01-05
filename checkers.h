@@ -25,7 +25,7 @@ public:
     void paintEvent(QPaintEvent* e);
     void mousePressEvent(QMouseEvent* event);
     void mouseReleaseEvent(QMouseEvent* event);
-
+    void cpuMove();
 };
 
 #endif // CHECKERS_H
